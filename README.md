@@ -24,40 +24,24 @@ http://localhost:8080/api/global/configuration**
 http://localhost:8080/api/global/configuration/create**
 
 #### RequestBody:
-{
-    "name": "EMAIL_REGULAR_EXPRESSION",
-    "description": "Patron que valida el email",
-    "pattern": "^[^@]+@[^@]+\\.[a-zA-Z]{2,}$"
-}
+
+![CreateConfig](https://user-images.githubusercontent.com/62367756/218292773-d9005ded-7182-457c-8960-89b90adb3361.png)
 
 #### Respuesta:
 
-{
-	"id": "9d4836f7-3918-4249-8a5c-f12cfa5aa7b5",
-    "name": "EMAIL_REGULAR_EXPRESSION",
-    "description": "Patron que valida el email",
-    "pattern": "^[^@]+@[^@]+\\.[a-zA-Z]{2,}$"
-}
+![CreateConfigREs](https://user-images.githubusercontent.com/62367756/218292782-5c6aa79a-aa48-438e-876f-0b47f9ecd826.png)
 
 #### 
 **Petición PUT:  Actualiza una  configuración en base a al id de la configuración 
 http://localhost:8080/api/global/configuration/9d4836f7-3918-4249-8a5c-f12cfa5aa7b5**
 
 #### RequestBody:
-{
-    "name": "EMAIL_REGULAR_EXPRESSION",
-    "description": "Patron que valida el email modificado",
-    "pattern": "^[^@]+@[^@]+\\.[a-zA-Z]{2,}$"
-}
+
+![UpdateConfig](https://user-images.githubusercontent.com/62367756/218292823-0fcf6a0f-f8df-48e8-bd39-9e391cd6ccce.png)
 
 #### Respuesta:
 
-{
-    "id": "9d4836f7-3918-4249-8a5c-f12cfa5aa7b5",
-    "name": "EMAIL_REGULAR_EXPRESSION",
-    "description": "Patron que valida el email modificado",
-    "pattern": "^[^@]+@[^@]+\\.[a-zA-Z]{2,}$"
-}
+![UpdateConfigResp](https://user-images.githubusercontent.com/62367756/218292827-4771e9c1-9135-41dd-a743-6fc6b886bdfd.png)
 
 
 Para ingresar a la consola de h2: **http://localhost:8080/api/h2-console** Datos para configurar conexión a la base de datos: Driver Class: org.h2.Driver JDBC URL: jdbc:h2:mem:nisum username: admin  /  password: system2023
