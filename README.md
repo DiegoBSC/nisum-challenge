@@ -12,27 +12,10 @@
 
 6. Las configuraciones de las expresiones regulares en la base de datos se cargan en el arranque inicial las mismas que pueden ser modificadas / creadas / listadas, con los siguientes endpoints: 
 
-#### **  Petición GET:  Obtiene las configuraciones existentes**
-#### ** http://localhost:8080/api/global/configuration**
+**Petición GET:  Obtiene las configuraciones existentes**
+**http://localhost:8080/api/global/configuration**
   
 #### Respuesta:
-  Petición POST:        
-  http://localhost:8081/api/saveUpdateUser
-
-  JSON de entrada para RequestBody:
-
-  {
-    "name": "Pedro Arauz",
-    "email": "pedro.arauz.88@gmail.com",
-    "password": "Passw0rd",
-    "phones": [
-             {
-               "number": "123456",
-               "cityCode": "1",
-               "countryCode": "593"
-             }
-              ]
-  }
 [{
         "id": "d0d796fc-1b3b-47b7-aa1a-6f3a6ceabe77",
         "name": "PASSWORD_REGULAR_EXPRESSION",
@@ -47,8 +30,8 @@
     }]
 
 #### 
-**  Petición POST:  Crea una nueva configuración siempre y cuando el campo name no exista en la Bdd
-  http://localhost:8080/api/global/configuration/create**
+**Petición POST:  Crea una nueva configuración siempre y cuando el campo name no exista en la Bdd
+http://localhost:8080/api/global/configuration/create**
 
 #### RequestBody:
 {
