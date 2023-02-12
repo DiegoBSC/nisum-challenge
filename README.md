@@ -16,6 +16,23 @@
 #### ** http://localhost:8080/api/global/configuration**
   
 #### Respuesta:
+  Petición POST:        
+  http://localhost:8081/api/saveUpdateUser
+
+  JSON de entrada para RequestBody:
+
+  {
+    "name": "Pedro Arauz",
+    "email": "pedro.arauz.88@gmail.com",
+    "password": "Passw0rd",
+    "phones": [
+             {
+               "number": "123456",
+               "cityCode": "1",
+               "countryCode": "593"
+             }
+              ]
+  }
 [{
         "id": "d0d796fc-1b3b-47b7-aa1a-6f3a6ceabe77",
         "name": "PASSWORD_REGULAR_EXPRESSION",
