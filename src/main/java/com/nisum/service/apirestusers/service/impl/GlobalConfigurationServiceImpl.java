@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -30,6 +31,12 @@ public class GlobalConfigurationServiceImpl implements GlobalConfigurationServic
         });
         GlobalConfiguration globalConfiguration  = globalConfigurationMapper.toModel(globalConfigurationDto);
         return globalConfigurationMapper.toDto(globalConfigurationRepository.save(globalConfiguration));
+    }
+
+    @Override
+    public List<GlobalConfigurationDto> getAllGlobalConfigurations() {
+        List<GlobalConfiguration> allConfigurations = (List<GlobalConfiguration>) globalConfigurationRepository.findAll();
+        return allConfigurations.stream().map(globalConfigurationMapper::toDto).toList();
     }
 
     @Override

@@ -7,6 +7,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -15,6 +16,11 @@ import java.util.UUID;
 public class GlobalConfigurationController {
 
     private final GlobalConfigurationService globalConfigurationService;
+
+    @GetMapping
+    public List<GlobalConfigurationDto> getAllGlobalConfiguration(){
+        return globalConfigurationService.getAllGlobalConfigurations();
+    }
 
     @Operation(summary = "Crea configuración", description = "Recibe la data UserDto, creando la configuración global siempre y cuando no se repita el nombre")
     @PostMapping("/create")
