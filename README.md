@@ -48,6 +48,6 @@ Para ingresar a la consola de h2: **http://localhost:8080/api/h2-console** Datos
 
 El proyecto tiene la swagger para la documentacion y test de end points, para ingresar apuntar la siguiente ruta: **http://localhost:8080/api/swagger-ui/index.html#/**
 
-El diagrama de la solución se encuentra en la ruta: src\main\resources\diagrama\diagrama.png
+El diagrama de la solución se encuentra en la ruta: src\main\resources\diagrama\Diagrama-Solucion-APIREST-Usuarios.png
 
 Proyecto desarrollado por **Diego Acosta** &copy;
