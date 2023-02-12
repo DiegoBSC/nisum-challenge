@@ -12,8 +12,8 @@
 
 6. Las configuraciones de las expresiones regulares en la base de datos se cargan en el arranque inicial las mismas que pueden ser modificadas / creadas / listadas, con los siguientes endpoints: 
 #### 
-**  Petición GET:  Obtiene las configuraciones existentes
-  http://localhost:8080/api/global/configuration**
+**  Petición GET:  Obtiene las configuraciones existentes**
+** http://localhost:8080/api/global/configuration**
   
 #### Respuesta:
 [{
