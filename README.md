@@ -16,18 +16,8 @@
 http://localhost:8080/api/global/configuration**
   
 #### Respuesta:
-[{
-        "id": "d0d796fc-1b3b-47b7-aa1a-6f3a6ceabe77",
-        "name": "PASSWORD_REGULAR_EXPRESSION",
-        "description": "Patron que valida el password",
-        "pattern": "^(?=\\w*\\d)(?=\\w*[A-Z])(?=\\w*[a-z])\\S{8,16}$"
-    },
-    {
-        "id": "164fc319-d79a-4546-a671-b4ce639c620a",
-        "name": "EMAIL_REGULAR_EXPRESSION",
-        "description": "Patron que valida el email",
-        "pattern": "^[^@]+@[^@]+\\.[a-zA-Z]{2,}$"
-    }]
+![GetConfigAll](https://user-images.githubusercontent.com/62367756/218292722-f602c620-b130-449e-b4d8-4d8c5eaf219f.png)
+
 
 #### 
 **Petición POST:  Crea una nueva configuración siempre y cuando el campo name no exista en la Bdd
